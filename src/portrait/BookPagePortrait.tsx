@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, View, ViewStyle } from 'react-native';
+import { Pressable, StyleSheet, View, type ViewStyle } from 'react-native';
 import {
     PanGestureHandler,
-    PanGestureHandlerGestureEvent,
+    type PanGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
 import Animated, {
     Easing,
@@ -14,7 +14,7 @@ import Animated, {
     useDerivedValue,
     useSharedValue,
     withTiming,
-    WithTimingConfig,
+    type WithTimingConfig,
 } from 'react-native-reanimated';
 import type { Page, Size } from '../types';
 import BackShadow from '../BookPage/BackShadow';
