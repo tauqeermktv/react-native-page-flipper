@@ -53,9 +53,9 @@ const FrontShadow: React.FC<FrontShadowProps> = ({
         );
 
         return {
-            transform: [
-                ...transformOrigin({ x: -shadowWidth / 2, y: 0 }, [{ scaleX }]),
-            ],
+            transform: transformOrigin({ x: -shadowWidth / 2, y: 0 }, [
+                { scaleX: scaleX as number },
+            ]) as any[],
         };
     });
 
