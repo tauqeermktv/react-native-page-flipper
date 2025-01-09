@@ -8,6 +8,7 @@
         "allowUnusedLabels": false,
         "esModuleInterop": true,
         "verbatimModuleSyntax": true,
+        "isolatedModules": true,
         "forceConsistentCasingInFileNames": true,
         "jsx": "react",
         "lib": ["esnext"],
