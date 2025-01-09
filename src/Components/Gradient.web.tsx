@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinearGradient, LinearGradientProps } from 'expo-linear-gradient';
+import { LinearGradient, type LinearGradientProps } from 'expo-linear-gradient';
 
 const Gradient: React.FC<LinearGradientProps> = (props) => {
     return <LinearGradient {...props} />;
