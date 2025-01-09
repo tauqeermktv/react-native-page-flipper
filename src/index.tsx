@@ -2,11 +2,20 @@ import usePrevious from './hooks/usePrevious';
 import useSetState from './hooks/useSetState';
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { useRef } from 'react';
-import { LayoutChangeEvent, StyleSheet, View, ViewStyle } from 'react-native';
-import { BookPage, BookPageInstance, IBookPageProps } from './BookPage';
+import {
+    type LayoutChangeEvent,
+    StyleSheet,
+    View,
+    type ViewStyle,
+} from 'react-native';
+import {
+    BookPage,
+    type BookPageInstance,
+    type IBookPageProps,
+} from './BookPage';
 import {
     BookPagePortrait,
-    PortraitBookInstance,
+    type PortraitBookInstance,
 } from './portrait/BookPagePortrait';
 import type { Page, Size } from './types';
 import { createPages } from './utils/utils';
